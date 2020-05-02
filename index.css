@@ -1,0 +1,20 @@
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  #videoContainer {
+    overflow: hidden;
+    position: relative;
+    display: none;
+  }
+  
+  #overLayer {
+    box-shadow: 0 0 0 2000px rgba(0, 0, 0, 0.4);
+    position: absolute;
+  }
+  
