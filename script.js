@@ -122,7 +122,7 @@ function onVideoPlaying() {
 }
 
 async function init() {
-  await faceapi.nets.tinyFaceDetector.loadFromUri("/models");
+  await faceapi.nets.tinyFaceDetector.loadFromUri("./models");
   setup();
   startVideo();
 }
