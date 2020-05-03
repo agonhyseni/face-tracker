@@ -3,6 +3,8 @@
 
 Simple demonstration of using [face-api.js](https://www.npmjs.com/package/face-api.js) to track the face from a [MediaStream](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream) and draw only the face in a Canvas.
 
+Try it here: https://agonhyseni.github.io/face-tracker/
+
 ![Face Tracker Preview](./gif/preview.gif)
 
 ## Installation
