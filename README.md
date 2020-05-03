@@ -1,3 +1,3 @@
-# Tracking face
+# Face tracker
 
 ![](./gif/preview.gif)
