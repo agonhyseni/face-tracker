@@ -72,7 +72,7 @@ function onVideoPlaying() {
       myVideo,
       new faceapi.TinyFaceDetectorOptions()
     );
-    
+
     ctx.clearRect(0, 0, width, height);
     if (!detection) {
       window.requestAnimationFrame(draw);
@@ -80,8 +80,10 @@ function onVideoPlaying() {
       return;
     }
 
-    let { _width, _height, _x, _y } = detection.box;
-
+    const _width = detection.box.width;
+    const _height = detection.box.height;
+    let _x = detection.box.x;
+    let _y = detection.box.y;
     const _offsetX = Math.floor(_width * facePadding);
     const _offsetY = Math.floor(_height * facePadding);
 
@@ -112,7 +114,7 @@ function onVideoPlaying() {
     overLayer.style.left = Math.floor(x) + "px";
     overLayer.style.top = Math.floor(y) + "px";
     // set the size of inner div
-    // making width the same as height to show the circle 
+    // making width the same as height to show the circle
     overLayer.style.width = Math.floor(2 * offsetY + height) + "px";
     overLayer.style.height = Math.floor(2 * offsetY + height) + "px";
 
